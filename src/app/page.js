@@ -1,0 +1,303 @@
+"use client";
+import React from "react";
+import CarFilter from "../components/CarFilter.js";
+import CarListings from "../components/CarListings.js";
+import CarBrands from "../components/CarBrands";
+import ShopByType from "../components/ShopByType.js";
+import Image from "next/image";
+import { Mail, Phone } from "lucide-react"; // icons
+
+export default function Home() {
+  return (
+    <main className="min-h-screen flex flex-col items-center justify-center ">
+      <CarFilter />
+
+      <CarListings />
+
+      <ShopByType />
+
+      <CarBrands />
+
+      {/* banner of quality */}
+
+      <div className="bg-blue-950 text-white p-20 mt-5 w-[100%]">
+        <h1 className="text-white text-2xl font-bold">WHY CHOOSE</h1>
+        <h1 className="text-yellow-400 text-2xl font-bold">
+          NAZAR JAPAN MOTORS?
+        </h1>
+        <p className="text-white text-1xl">
+          Driven by Trust, Powered by Quality.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10">
+          {/* Card 1 */}
+          <div className="bg-white p-2 rounded-sm text-blue-950 flex items-center">
+            <div className="w-[10%] flex justify-center">
+              <img src="/1.png" alt="certificate" className="w-8 h-8" />
+            </div>
+
+            <div className="w-[90%] pl-3">
+              <p className="font-semibold">100% Genuine Japanese Cars</p>
+              <p className="text-sm">
+                Direct imports with original auction reports
+              </p>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white p-2 rounded-sm text-blue-950 flex items-center">
+            <div className="w-[10%] flex justify-center">
+              <img src="/2.png" alt="star" className="w-8 h-8" />
+            </div>
+            <div className="w-[90%] pl-3">
+              <p className="font-semibold">Best Prices</p>
+              <p className="text-sm">Affordable rates on all models</p>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white p-2 rounded-sm text-blue-950 flex items-center">
+            <div className="w-[10%] flex justify-center">
+              <img src="/3.png" alt="fuel" className="w-8 h-8" />
+            </div>
+            <div className="w-[90%] pl-3">
+              <p className="font-semibold">Latest Models & Hybrid Options</p>
+              <p className="text-sm">Fuel-efficient cars available</p>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white p-2 rounded-sm text-blue-950 flex items-center">
+            <div className="w-[10%] flex justify-center">
+              <img src="/4.png" alt="delivery" className="w-8 h-8" />
+            </div>
+            <div className="w-[90%] pl-3">
+              <p className="font-semibold">Nationwide Delivery</p>
+              <p className="text-sm">
+                Karachi, Lahore, Islamabad, and across Pakistan
+              </p>
+            </div>
+          </div>
+
+          {/* Card 5 */}
+          {/* Card 5 */}
+          {/* Card 5 */}
+<div className="bg-white p-2 rounded-sm text-blue-950 flex items-center w-full sm:w-full lg:w-50%">
+  <div className="w-[10%] flex justify-center">
+    <img src="/5.png" alt="users" className="w-8 h-8" />
+  </div>
+  <div className="w-[90%] pl-3">
+    <p className="font-semibold">Trusted by 1000+ Customers</p>
+    <p className="text-sm">
+      Excellent reviews on Facebook, Instagram, and YouTube
+    </p>
+  </div>
+</div>
+
+        </div>
+
+        <button className="bg-yellow-400 text-blue-950 px-6 py-2 rounded mt-10 hover:bg-yellow-500">
+          Contact us
+        </button>
+      </div>
+
+      {/* more description */}
+
+      <div className="bg-gray-200 text-white p-20 mt-5 w-[100%] ">
+        <h1 className="text-yellow-400 text-2xl font-bold">
+          FIND YOUR PERFECT JAPANESE CAR
+        </h1>
+        <p className="text-blue-950 text-1xl">
+          We offer a wide selection of imported cars in Pakistan, including:
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-10">
+          {/* Card 1 */}
+          <div className="bg-blue-950  p-2 rounded-sm text-white flex items-center">
+            <div className="w-[10%] flex justify-center">
+              <img src="/toyota.png" alt="certificate" className="w-8 h-8" />
+            </div>
+
+            <div className="w-[90%] pl-3">
+              <p className="font-semibold">Toyota Cars</p>
+              <p className="text-sm">Passo, Prius, Aqua, Yaris, Raize</p>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-yellow-400 p-2 rounded-sm text-blue-950 flex items-center">
+            <div className="w-[10%] flex justify-center">
+              <img src="/nissan.png" alt="star" className="w-8 h-8" />
+            </div>
+            <div className="w-[90%] pl-3">
+              <p className="font-semibold">Nissan Cars</p>
+              <p className="text-sm">Note, Roox, Clipper, Dayz</p>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-blue-950 p-2 rounded-sm text-white flex items-center">
+            <div className="w-[10%] flex justify-center">
+              <img src="/honda.png" alt="fuel" className="w-8 h-8" />
+            </div>
+            <div className="w-[90%] pl-3">
+              <p className="font-semibold">Honda Cars</p>
+              <p className="text-sm">N box , N one , N WGN</p>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-yellow-400 p-2 rounded-sm text-blue-950 flex items-center">
+            <div className="w-[10%] flex justify-center">
+              <img src="/suzuki.png" alt="delivery" className="w-8 h-8" />
+            </div>
+            <div className="w-[90%] pl-3">
+              <p className="font-semibold">Suzuki Cars</p>
+              <p className="text-sm">Alto, Jimny, Wagon R, Every Van</p>
+            </div>
+          </div>
+
+          {/* Card 5 */}
+          <div className="bg-blue-950 w-[50%] p-2 rounded-sm text-white flex items-center  w-full sm:w-full lg:w-50%">
+            <div className="w-[10%] flex justify-center">
+              <img src="/daihatsu.png" alt="users" className="w-8 h-8" />
+            </div>
+            <div className="w-[90%] pl-3">
+              <p className="font-semibold">Daihatsu Cars</p>
+              <p className="text-sm">Boon, Tanto , Hijet , Mira Tocot</p>
+            </div>
+          </div>
+        </div>
+
+        <button className="bg-yellow-400 text-blue-950 px-6 py-2 rounded mt-10 hover:bg-yellow-500">
+          Contact us
+        </button>
+      </div>
+
+      {/* next banner */}
+
+      <div className="relative w-full h-[300px] md:h-[400px] lg:h-[450px] mt-5">
+        {/* Background Image */}
+        <Image src="/bannerImg.png" alt="Cars" fill className="object-cover" />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-blue-950/70 z-10"></div>
+
+        {/* Content */}
+        <div className="relative z-20 flex items-center h-full px-6 md:px-20">
+          <div className="text-white">
+            <h2 className="text-yellow-400 font-bold text-xl md:text-2xl">
+              CONTACT US
+            </h2>
+            <h1 className="text-2xl md:text-4xl font-bold leading-snug">
+              BUY YOUR DREAM CAR <br /> TODAY!
+            </h1>
+
+            <div className="mt-6 space-y-3">
+              <div>
+                <p className="text-yellow-400 font-semibold">CALL US:</p>
+                <p>021-34550040</p>
+              </div>
+              <div>
+                <p className="text-yellow-400 font-semibold">EMAIL:</p>
+                <p>info@nazarjapan.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* last descriptions  */}
+      <section className="bg-gray-100 py-12 px-6  md:px-20">
+        <div className="max-w-5xl mx-auto text-gray-800">
+          {/* Heading */}
+          <h1 className="text-2xl md:text-2xl font-bold text-blue-900 mb-4">
+            Buy Japanese Used Cars in Pakistan – Best Prices & Quality
+          </h1>
+          <p className="mb-10">
+            Nazar Japan Motors, your trusted destination for Japanese used cars
+            in Pakistan. We import high-quality{" "}
+            <span className="font-semibold">
+              Toyota, Honda, Suzuki, Nissan, Daihatsu, Mitsubishi,
+            </span>{" "}
+            and <span className="font-semibold">Subaru</span> cars directly from
+            Japan, ensuring verified auction sheets and the best deals.
+          </p>
+
+          {/* Why Choose */}
+          <h2 className="text-xl font-bold text-blue-900 mb-4">
+            Why Choose Nazar Japan Motors?
+          </h2>
+          <ul className="list-disc list-inside space-y-2 mb-10">
+            <li>
+              <span className="font-semibold">100% Genuine Japanese Cars</span>{" "}
+              – Direct imports with original auction reports
+            </li>
+            <li>
+              <span className="font-semibold">Best Prices</span> – Affordable
+              rates on all models
+            </li>
+            <li>
+              <span className="font-semibold">
+                Latest Models & Hybrid Options
+              </span>{" "}
+              – Fuel-efficient cars available
+            </li>
+            <li>
+              <span className="font-semibold">Nationwide Delivery</span> –
+              Karachi, Lahore, Islamabad, and across Pakistan
+            </li>
+            <li>
+              <span className="font-semibold">Trusted by 1000+ Customers</span>{" "}
+              – Excellent reviews on Facebook, Instagram, and YouTube
+            </li>
+          </ul>
+
+          {/* Car List */}
+          <h2 className="text-xl font-bold text-blue-900 mb-4">
+            Find Your Perfect Japanese Car
+          </h2>
+          <p className="mb-4">
+            We offer a wide selection of imported cars in Pakistan, including:
+          </p>
+          <ul className="list-disc list-inside space-y-2 mb-10">
+            <li>
+              <span className="font-semibold">Toyota Cars</span> – Passo, Prius,
+              Aqua, Yaris, Raize
+            </li>
+            <li>
+              <span className="font-semibold">Nissan Cars</span> – Note, Roox,
+              Clipper, Dayz
+            </li>
+            <li>
+              <span className="font-semibold">Honda Cars</span> – N Box, N One,
+              N WGN
+            </li>
+            <li>
+              <span className="font-semibold">Suzuki Cars</span> – Alto, Jimny,
+              Wagon R, Every
+            </li>
+            <li>
+              <span className="font-semibold">Daihatsu Cars</span> – Boon,
+              Tanto, Hijet, Mira Tocot
+            </li>
+          </ul>
+
+          {/* Contact */}
+          <h2 className="text-xl font-bold text-blue-900 mb-4">
+            Contact Us – Buy Your Dream Car Today!
+          </h2>
+          <div className="space-y-3">
+            <p className="flex items-center gap-2">
+              <Phone className="w-5 h-5 text-yellow-500" />
+              Call Us: +92-21-34550040
+            </p>
+            <p className="flex items-center gap-2">
+              <Mail className="w-5 h-5 text-yellow-500" />
+              Email: info@nazarjapan.com
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
