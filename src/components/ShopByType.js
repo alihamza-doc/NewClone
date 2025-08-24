@@ -19,7 +19,7 @@ const ShopByType = () => {
 
   return (
     <div className=" py-8 my-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
         {/* Heading */}
         <h2 className="text-2xl sm:text-2xl md:text-5xl font-bold text-blue-900 mb-6 border-b-2 border-blue-900 pb-2">
           SHOP BY TYPE
@@ -34,7 +34,7 @@ const ShopByType = () => {
               className="bg-white rounded-xl shadow-lg p-15 flex flex-col items-center justify-center text-center hover:bg-yellow-500 transition-colors duration-200"
             >
               {/* Image wrapper */}
-              <div className="relative w-20 h-20 sm:w-20 sm:h-16 md:w-30 md:h-30 lg:w-50 lg:h-24 mb-3 p-10">
+              <div className="relative w-20 h-20 sm:w-20 sm:h-16 md:w-30 md:h-30 lg:w-60 lg:h-30 mb-3 ">
                 <Image
                   src={type.image}
                   alt={type.name}

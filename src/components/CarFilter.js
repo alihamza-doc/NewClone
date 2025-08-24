@@ -21,7 +21,7 @@ export default function CarFilter() {
   };
 
   return (
-    <div className="w-full bg-blue-950 backdrop-blur-md p-8 rounded shadow-xl border border-gray-700 py-10 z-10">
+    <div className="hidden sm:block w-full bg-blue-950 backdrop-blur-md p-8 rounded shadow-xl border border-gray-700 py-10 z-10">
       {/* Search Bar */}
       <div className="relative mb-30 my-5">
         <input
