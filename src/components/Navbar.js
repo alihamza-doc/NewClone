@@ -8,11 +8,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-blue-950 to-blue-950 text-white p-4">
+    <nav className="lg:bg-blue-950  text-blue-950 lg:text-white p-4 bg-yellow-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 text-blue-950 lg:text-white">
             <Link href="/">
               <Image
                 src="/nazarLogo.webp" // 👈 put your logo inside public/logo.png
@@ -69,7 +69,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-yellow-400 focus:outline-none text-2xl"
+              className="text-blue-950 lg:text-white hover:text-yellow-400 focus:outline-none text-2xl"
             >
               {isOpen ? "✖" : "☰"}
             </button>
@@ -79,11 +79,11 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-blue-700">
-          <div className="px-4 py-3 space-y-2 flex flex-col">
+        <div className="md:hidden bg-blue-950">
+          <div className="px-4 py-3 space-y-2 flex flex-col  text-white">
             <Link
               href="/"
-              className="hover:text-yellow-400 transition-colors"
+              className=" hover:text-yellow-400 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Home

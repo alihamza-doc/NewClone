@@ -17,7 +17,7 @@ const CarCards = () => {
   const cars = useSelector((state) => state.carListings.cars);
 
   return (
-    <div className="grid grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
+    <div className="grid grid-cols-2 w-full sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
       {cars.map((car) => (
         <div
           key={car.id}
