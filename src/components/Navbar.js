@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-blue-900 to-blue-950 text-white p-4">
+    <nav className="bg-gradient-to-r from-blue-950 to-blue-950 text-white p-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

@@ -33,11 +33,13 @@ export default function Home() {
           {/* Card 1 */}
           <div className="bg-white p-2 py-6 rounded-sm text-blue-950 flex items-center">
             <div className="w-[20%] flex justify-center ">
-              <img src="/1.png" alt="certificate" className="w-25 h-18" />
+              <img src="/1.png" alt="certificate" className="w-20 h-18" />
             </div>
 
             <div className="w-[80%] pl-3">
-              <p className="font-semibold text-2xl ">100% Genuine Japanese Cars</p>
+              <p className="font-semibold text-2xl ">
+                100% Genuine Japanese Cars
+              </p>
               <p className="text-xl">
                 Direct imports with original auction reports
               </p>
@@ -47,7 +49,7 @@ export default function Home() {
           {/* Card 2 */}
           <div className="bg-white p-2 py-6 rounded-sm text-blue-950 flex items-center">
             <div className="w-[20%] flex justify-center">
-              <img src="/2.png" alt="star" className="w-25 h-18" />
+              <img src="/2.png" alt="star" className="w-20 h-18" />
             </div>
             <div className="w-[80%] pl-3">
               <p className="font-semibold text-2xl">Best Prices</p>
@@ -58,10 +60,12 @@ export default function Home() {
           {/* Card 3 */}
           <div className="bg-white p-2 py-6 rounded-sm text-blue-950 flex items-center">
             <div className="w-[20%] flex justify-center">
-              <img src="/3.png" alt="fuel" className="w-25 h-18" />
+              <img src="/3.png" alt="fuel" className="w-20 h-18" />
             </div>
             <div className="w-[80%] pl-3">
-              <p className="font-semibold text-2xl">Latest Models & Hybrid Options</p>
+              <p className="font-semibold text-2xl">
+                Latest Models & Hybrid Options
+              </p>
               <p className="text-xl">Fuel-efficient cars available</p>
             </div>
           </div>
@@ -69,7 +73,7 @@ export default function Home() {
           {/* Card 4 */}
           <div className="bg-white p-2 py-6 rounded-sm text-blue-950 flex items-center">
             <div className="w-[20%] flex justify-center">
-              <img src="/4.png" alt="delivery" className="w-25 h-18" />
+              <img src="/4.png" alt="delivery" className="w-20 h-18" />
             </div>
             <div className="w-[80%] pl-3">
               <p className="font-semibold text-2xl">Nationwide Delivery</p>
@@ -79,21 +83,21 @@ export default function Home() {
             </div>
           </div>
 
+          
           {/* Card 5 */}
-          {/* Card 5 */}
-          {/* Card 5 */}
-<div className="bg-white p-2 py-6 rounded-sm text-blue-950 flex items-center w-full sm:w-full lg:w-50%">
-  <div className="w-[20%] flex justify-center">
-    <img src="/5.png" alt="users" className="w-25 h-18" />
-  </div>
-  <div className="w-[80%] pl-3">
-    <p className="font-semibold text-2xl">Trusted by 1000+ Customers</p>
-    <p className="text-xl">
-      Excellent reviews on Facebook, Instagram, and YouTube
-    </p>
-  </div>
-</div>
-
+          <div className="bg-white p-2 py-6 rounded-sm text-blue-950 flex items-center w-full sm:w-full lg:w-50%">
+            <div className="w-[20%] flex justify-center">
+              <img src="/5.png" alt="users" className="w-20 h-18" />
+            </div>
+            <div className="w-[80%] pl-3">
+              <p className="font-semibold text-2xl">
+                Trusted by 1000+ Customers
+              </p>
+              <p className="text-xl">
+                Excellent reviews on Facebook, Instagram, and YouTube
+              </p>
+            </div>
+          </div>
         </div>
 
         <button className="bg-yellow-400 text-white text-2xl  px-6 py-2 rounded-lg mt-10 hover:bg-yellow-500">
@@ -108,7 +112,7 @@ export default function Home() {
           FIND YOUR PERFECT
         </h1>
         <h1 className="text-yellow-300 text-xl lg:text-5xl text-2xl font-bold">
-         JAPANESE CAR
+          JAPANESE CAR
         </h1>
         <p className="text-blue-950 text-xl py-5">
           We offer a wide selection of imported cars in Pakistan, including:
@@ -148,7 +152,6 @@ export default function Home() {
               <p className="text-xl">Note, Roox, Clipper, Dayz</p>
             </div>
           </div>
-          
 
           {/* Card 4 */}
           <div className="bg-yellow-400 p-2 rounded-sm text-blue-950 flex items-center">
@@ -172,8 +175,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        
       </div>
 
       {/* next banner */}
@@ -192,17 +193,23 @@ export default function Home() {
               CONTACT US
             </h2>
             <h1 className="text-2xl md:text-5xl font-sm leading-snug">
-              BUY YOUR DREAM CAR 
+              BUY YOUR DREAM CAR
             </h1>
-            <h1 className="text-2xl md:text-5xl font-sm leading-snug">TODAY!</h1>
+            <h1 className="text-2xl md:text-5xl font-sm leading-snug">
+              TODAY!
+            </h1>
 
             <div className="mt-6 space-y-3">
               <div>
-                <p className="text-yellow-400 font-semibold lg:text-3xl pt-6 ">CALL US:</p>
+                <p className="text-yellow-400 font-semibold lg:text-3xl pt-6 ">
+                  CALL US:
+                </p>
                 <p className="lg:text-3xl">021-34550040</p>
               </div>
               <div>
-                <p className="text-yellow-400 font-semibold lg:text-3xl pt-8">EMAIL:</p>
+                <p className="text-yellow-400 font-semibold lg:text-3xl pt-8">
+                  EMAIL:
+                </p>
                 <p className="lg:text-3xl">info@nazarjapan.com</p>
               </div>
             </div>
