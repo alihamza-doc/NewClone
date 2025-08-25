@@ -179,7 +179,7 @@ export default function Home() {
 
       {/* next banner */}
 
-      <div className="relative w-full h-[300px] md:h-[400px] lg:h-[580px] mt-5 ">
+      <div className="relative w-full h-[420px] md:h-[400px] lg:h-[580px] mt-5 ">
         {/* Background Image */}
         <Image src="/bannerImg.png" alt="Cars" fill className="object-cover" />
 

@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <div className="flex">
             <Sidebar />
-            <main className="flex-1 p-4">{children}</main>
+            <main className="flex-1 p-">{children}</main>
           </div>
           <Footer />
         </Providers>

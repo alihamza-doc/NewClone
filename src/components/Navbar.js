@@ -15,7 +15,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 text-blue-950 lg:text-white">
             <Link href="/">
               <Image
-                src="/nazarLogo.webp" // 👈 put your logo inside public/logo.png
+                src="/nazarLogo.webp" 
                 alt="Nazar Japan Motors"
                 width={250}
                 height={70}
