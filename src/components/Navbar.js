@@ -42,7 +42,7 @@ export default function Navbar() {
               href="/faqs"
               className="hover:text-yellow-400 transition-colors font-medium"
             >
-              FAQ's
+              FAQ&aposs
             </Link>
             <Link
               href="/blog"
