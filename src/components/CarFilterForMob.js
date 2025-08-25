@@ -21,17 +21,11 @@ export default function CarFilter({ showOnMobile = false }) {
   };
 
   return (
-<div className={`${showOnMobile ? "block" : "hidden lg:block"} lg:mt-4 w-full bg-blue-950 backdrop-blur-md p-8 shadow-xl border border-gray-700 py-10 z-10`}>
-      {/* Search Bar */}
-      <div className="relative mb-30 my-5">
-        <input
-          type="text"
-          placeholder="Search for your dream car..."
-          className="w-full p-4 pr-12 rounded-2xl bg-white/90 text-gray-800 border border-gray-300 
-          focus:ring-4 focus:ring-yellow-400 focus:outline-none shadow-lg placeholder-gray-500 text-lg"
-        />
-        <span className="absolute right-4 top-4 text-gray-500 text-xl">🔍</span>
-      </div>
+<div className={`${showOnMobile ? "block" : "hidden lg:block"} lg:mt-4 w-full bg-blue-900 backdrop-blur-md p-8 shadow-xl border border-gray-700 py-10 z-10`}
+        style={{ backgroundColor: 'rgba(32,38,88, 0.80)' }}
+
+>
+     
 
       {/* Filters */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-6">
@@ -54,6 +48,7 @@ export default function CarFilter({ showOnMobile = false }) {
         <select
           className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
           shadow-md focus:ring-4 focus:ring-yellow-400 focus:outline-none hover:shadow-lg transition"
+          
           value={filters.bodyType}
           onChange={(e) => handleChange("bodyType", e.target.value)}
         >

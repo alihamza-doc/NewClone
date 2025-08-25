@@ -41,8 +41,8 @@ const CarCards = () => {
           onChange={(e) => setBranch(e.target.value)}
           className="border rounded-md px-15 py-1 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-white "
         >
-          <option value="Khalid Bin Waleed">Branches</option>
-          <option value="Jailroad">Jailroad</option>
+          <option className="text-sm lg:text-2xl" value="Khalid Bin Waleed">Branches</option>
+          <option  className="text-sm lg:text-2xl" value="Jailroad">Jailroad</option>
         </select>
       </div>
 

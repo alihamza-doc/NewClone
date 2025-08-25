@@ -44,7 +44,7 @@ const ShopByType = () => {
               </div>
 
               {/* Name */}
-              <span className="text-blue-900 font-medium text-xs sm:text-sm md:text-base">
+              <span className="text-blue-900 font-medium text-3xl sm:text-sm md:text-2xl">
                 {type.name}
               </span>
             </Link>
