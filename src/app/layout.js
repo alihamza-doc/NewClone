@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import TopBanner from "../components/TopBanner";
-import { Providers } from "./provider.js"; 
+import { Providers } from "./provider.js";
 
 import { Inter } from "next/font/google"; 
 

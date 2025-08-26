@@ -34,12 +34,12 @@ const CarCards = () => {
   return (
     <>
       {/* Branches selection Area */}
-      <div className="block sm:hidden container-fluid w-full flex gap-6 py-5 bg-yellow-400 ">
+      <div className="block sm:hidden container-fluid w-full flex gap-2 py-5 bg-yellow-400 ">
         <h1 className="p-3 font-semibold text-blue-950 px-5 ">Branches:</h1>
         <select
           value={Branch}
           onChange={(e) => setBranch(e.target.value)}
-          className="border rounded-md px-15 py-1 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-white "
+          className="border rounded-md px-15  py-1 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-white "
         >
           <option className="text-sm lg:text-2xl" value="Khalid Bin Waleed">Branches</option>
           <option  className="text-sm lg:text-2xl" value="Jailroad">Jailroad</option>
