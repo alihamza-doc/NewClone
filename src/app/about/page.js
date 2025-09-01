@@ -79,7 +79,7 @@ export default function AboutPage() {
             <img
               src="/aboutus2.png"
               alt=""
-              className="rounded-full lg:w-90 lg:h-90 mx-auto"
+              className="rounded-full lg:w-80 lg:h-80 mx-auto"
             />
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function AboutPage() {
             <img
               src="/aboutus3.png"
               alt=""
-              className="rounded-full lg:w-90 lg:h-90 mx-auto"
+              className="rounded-full lg:w-80 lg:h-80 mx-auto"
             />
           </div>
 
@@ -157,7 +157,7 @@ export default function AboutPage() {
             <img
               src="/aboutus4.png"
               alt=""
-              className="rounded-full lg:w-90 lg:h-90 mx-auto"
+              className="rounded-full lg:w-80 lg:h-80 mx-auto"
             />
           </div>
         </div>
@@ -169,7 +169,7 @@ export default function AboutPage() {
             <img
               src="/aboutus5.png"
               alt=""
-              className="rounded-full lg:w-90 lg:h-90 mx-auto"
+              className="rounded-full lg:w-80 lg:h-80 mx-auto"
             />
           </div>
 

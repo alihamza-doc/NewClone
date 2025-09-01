@@ -8,47 +8,47 @@ export default function Sidebar() {
   // ✅ Company logos with cars
   const carData = {
     TOYOTA: {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.png",
+      logo: "/TOYOTA.webp",
       cars: ["Corolla", "Camry", "Land Cruiser", "Yaris"],
     },
     NISSAN: {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Nissan_logo.png",
+      logo: "/NISSAN.webp",
       cars: ["Sunny", "Note", "X-Trail"],
     },
     HONDA: {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda-logo.png",
+      logo: "/HONDA.webp",
       cars: ["Civic", "City", "Vezel"],
     },
     MITSUBISHI: {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Mitsubishi_logo.png",
+      logo: "/MITSUBISHI.webp",
       cars: ["Pajero", "Outlander"],
     },
     SUBARU: {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/58/Subaru_logo.png",
+      logo: "/SUBARU.webp",
       cars: ["Impreza", "Forester"],
     },
     MAZDA: {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/6/69/Mazda_logo.png",
+      logo: "/MAZDA.webp",
       cars: ["CX-5", "Demio"],
     },
     SUZUKI: {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/7/71/Suzuki_logo.png",
+      logo: "/SUZUKI.webp",
       cars: ["Alto", "Wagon R", "Swift"],
     },
     DAIHATSU: {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Daihatsu_logo.png",
+      logo: "/DAIHATSU.webp",
       cars: ["Mira", "Move"],
     },
   };
 
   // ✅ Body Types with icons
   const bodyTypes = [
-    { name: "HATCHBACK", img: "https://img.icons8.com/color/48/hatchback.png" },
-    { name: "MINI VAN", img: "https://img.icons8.com/color/48/minivan.png" },
-    { name: "S WAGON", img: "https://img.icons8.com/color/48/station-wagon.png" },
-    { name: "SUV", img: "https://img.icons8.com/color/48/suv.png" },
-    { name: "T WAGON", img: "https://img.icons8.com/color/48/trailer.png" },
-    { name: "VAN", img: "https://img.icons8.com/color/48/van.png" },
+    { name: "HATCHBACK", img: "/hatchback.webp" },
+    { name: "MINI VAN", img: "/minivan.webp" },
+    { name: "S WAGON", img: "/station-wagon.webp" },
+    { name: "SUV", img: "/SUV.webp" },
+    { name: "T WAGON", img: "/t-wagon.webp" },
+    { name: "VAN", img: "/van.webp" },
   ];
 
   return (
@@ -67,7 +67,7 @@ export default function Sidebar() {
             onMouseLeave={() => setHoveredMake(null)}
           >
             <div className="flex items-center gap-2">
-              <img src={carData[make].logo} alt={make} className="w-6 h-6" />
+              <img src={carData[make].logo} alt={make} className="w-9 h-6" />
               <span>{make}</span>
             </div>
             <FaChevronRight size={14} />
@@ -78,7 +78,7 @@ export default function Sidebar() {
                 {carData[make].cars.map((car, i) => (
                   <li
                     key={i}
-                    className="px-3 py-2 bg-white text-black hover:bg-black hover:text-white cursor-pointer"
+                    className="px-3 py-2 bg-black text-white hover:bg-yellow-500 hover:text-black cursor-pointer"
                   >
                     {car}
                   </li>
@@ -99,7 +99,7 @@ export default function Sidebar() {
             key={idx}
             className="flex items-center gap-2 px-4 py-2 border-b hover:bg-gray-100 cursor-pointer"
           >
-            <img src={body.img} alt={body.name} className="w-6 h-6" />
+            <img src={body.img} alt={body.name} className="w-8 h-6" />
             <span>{body.name}</span>
           </li>
         ))}

@@ -42,7 +42,7 @@ const CarCards = () => {
           className="border rounded-md px-15  py-1 focus:outline-none focus:ring-2 focus:ring-yellow-400 bg-white "
         >
           <option className="text-sm lg:text-2xl" value="Khalid Bin Waleed">Branches</option>
-          <option  className="text-sm lg:text-2xl" value="Jailroad">Jailroad</option>
+          <option className="text-sm lg:text-2xl" value="Jailroad">Jailroad</option>
         </select>
       </div>
 
@@ -72,22 +72,20 @@ const CarCards = () => {
           </select>
 
           <button
-            className={`p-2 rounded-md border ${
-              view === "grid"
+            className={`p-2 rounded-md border ${view === "grid"
                 ? "bg-yellow-400 border-black"
                 : "border-black"
-            }`}
+              }`}
             onClick={() => setView("grid")}
           >
             <FaThLarge />
           </button>
 
           <button
-            className={`p-2 rounded-md border ${
-              view === "list"
+            className={`p-2 rounded-md border ${view === "list"
                 ? "bg-yellow-400 border-black"
                 : "border-black"
-            }`}
+              }`}
             onClick={() => setView("list")}
           >
             <FaList />
@@ -147,7 +145,7 @@ const CarCards = () => {
 
               <hr className="my-3 border-t border-yellow-400" />
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 text-xs sm:text-sm text-gray-700">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-2 text-xs sm:text-sm text-gray-700">
                 <div className="flex items-center gap-1 sm:gap-2">
                   <FontAwesomeIcon
                     icon={faCogs}
@@ -172,11 +170,11 @@ const CarCards = () => {
               </div>
             </div>
 
-            <div className="flex p-1 gap-1">
-              <button className="w-full py-2 text-xs sm:text-base bg-blue-950 text-white font-light rounded-full hover:bg-blue-900 transition-colors">
+            <div className="flex p-1 gap-3">
+              <button className="w-full py-2 text-xs sm:text-base xl:text-xs bg-blue-950 text-white font-light rounded-full hover:bg-blue-900 transition-colors">
                 View Details
               </button>
-              <button className="w-full py-2 text-xs sm:text-base bg-blue-950 text-white font-light rounded-full hover:bg-blue-900 transition-colors">
+              <button className="w-full py-2 text-xs sm:text-base xl:text-xs  bg-blue-950 text-white font-light rounded-full hover:bg-blue-900 transition-colors">
                 Quick Review
               </button>
 
@@ -186,48 +184,45 @@ const CarCards = () => {
       </div>
 
       {/* Pagination Controls */}
-<div className="flex justify-center items-center gap-2 py-6">
-  {/* Prev Button */}
-  <button
-    onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-    disabled={currentPage === 1}
-    className={`w-10 h-10 flex items-center justify-center rounded-full ${
-      currentPage === 1
-        ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-        : "bg-yellow-400 text-white hover:bg-yellow-500"
-    }`}
-  >
-    «
-  </button>
+      <div className="flex justify-center items-center gap-2 py-6">
+        {/* Prev Button */}
+        <button
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          disabled={currentPage === 1}
+          className={`w-10 h-10 flex items-center justify-center rounded-full ${currentPage === 1
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "bg-yellow-400 text-white hover:bg-yellow-500"
+            }`}
+        >
+          «
+        </button>
 
-  {/* Page Numbers */}
-  {Array.from({ length: totalPages }, (_, index) => (
-    <button
-      key={index + 1}
-      onClick={() => setCurrentPage(index + 1)}
-      className={`w-10 h-10 flex items-center justify-center rounded-full ${
-        currentPage === index + 1
-          ? "bg-yellow-400 text-white"
-          : "bg-yellow-400 text-white hover:bg-yellow-500"
-      }`}
-    >
-      {index + 1}
-    </button>
-  ))}
+        {/* Page Numbers */}
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index + 1}
+            onClick={() => setCurrentPage(index + 1)}
+            className={`w-10 h-10 flex items-center justify-center rounded-full ${currentPage === index + 1
+                ? "bg-yellow-400 text-white"
+                : "bg-yellow-400 text-white hover:bg-yellow-500"
+              }`}
+          >
+            {index + 1}
+          </button>
+        ))}
 
-  {/* Next Button */}
-  <button
-    onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
-    disabled={currentPage === totalPages}
-    className={`w-10 h-10 flex items-center justify-center rounded-full ${
-      currentPage === totalPages
-        ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-        : "bg-yellow-400 text-white hover:bg-yellow-500"
-    }`}
-  >
-    »
-  </button>
-</div>
+        {/* Next Button */}
+        <button
+          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+          disabled={currentPage === totalPages}
+          className={`w-10 h-10 flex items-center justify-center rounded-full ${currentPage === totalPages
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "bg-yellow-400 text-white hover:bg-yellow-500"
+            }`}
+        >
+          »
+        </button>
+      </div>
 
     </>
   );

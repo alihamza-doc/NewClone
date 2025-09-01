@@ -20,7 +20,7 @@ const ShopByType = () => {
   return (
     <div className="bg-yellow-400 py-6 my-7">
       <div className="container mx-auto px-10">
-        <h2 className="flex text-xl lg:text-6xl font-bold mb-6 border-b-2 border-blue-900 pb-5 text-blue-900">
+        <h2 className="flex text-xl lg:text-5xl font-bold mb-6 border-b-2 border-blue-900 pb-5 text-blue-900">
   CHOOSE BY<span className="text-white px-2">MAKE/MODEL</span>
 </h2>
 
