@@ -21,20 +21,11 @@ export default function CarFilter({ showOnMobile = false }) {
   };
 
   return (
-<div className={`${showOnMobile ? "block" : "hidden lg:block"} lg:mt-4 w-full bg-blue-950 backdrop-blur-md p-8 shadow-xl border border-gray-700 py-10 z-10`}>
-      {/* Search Bar */}
-      <div className="relative mb-30 my-5">
-        <input
-          type="text"
-          placeholder="Search for your dream car..."
-          className="w-full p-4 pr-12 rounded-2xl bg-white/90 text-gray-800 border border-gray-300 
-          focus:ring-4 focus:ring-yellow-400 focus:outline-none shadow-lg placeholder-gray-500 text-lg"
-        />
-        <span className="absolute right-4 top-4 text-gray-500 text-xl">🔍</span>
-      </div>
-
+<div className={`${showOnMobile ? "block" : "hidden lg:block"}  mt-2 w-[230px] bg-white backdrop-blur-md    z-10`}>
+     
+     <div className="bg-blue-950 text-white text-center w-full py-4 px-4  mb-6">
       {/* Filters */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-6">
         {/* Makers */}
         <select
           className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
@@ -157,16 +148,12 @@ export default function CarFilter({ showOnMobile = false }) {
       </div>
 
       {/* Buttons */}
-      <div className="flex flex-wrap gap-4 mt-8 justify-end">
-        <button className="bg-yellow-400 hover:bg-yellow-500 px-8 py-3 rounded-xl text-black font-semibold shadow-lg transition transform hover:scale-105">
+      <div className="flex flex-wrap gap-4 mt-8 justify-center">
+        <button className="bg-yellow-400 hover:bg-yellow-500 px-8 py-3 rounded-xl text-black font-semibold shadow-lg transition transform hover:scale-105 text-center">
           Search
         </button>
-        <button
-          onClick={() => dispatch(resetFilters())}
-          className="bg-gray-200 hover:bg-gray-300 px-8 py-3 rounded-xl text-gray-800 font-medium shadow-lg transition transform hover:scale-105"
-        >
-          Reset
-        </button>
+        
+      </div>
       </div>
     </div>
   );

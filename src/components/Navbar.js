@@ -32,7 +32,7 @@ export default function Navbar() {
                 <Image
                   src="/nazarLogo.webp"
                   alt="Nazar Japan Motors"
-                  width={180}
+                  width={300}
                   height={60}
                   priority
                   className="hidden md:block"
@@ -61,33 +61,33 @@ export default function Navbar() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              <Link href="/" className="hover:text-yellow-400 transition-colors font-medium">Home</Link>
+              <Link href="/" className="hover:text-yellow-400 transition-colors font-normal">Home</Link>
               
                              {/* About Dropdown */}
                <div className="relative group">
-                 <div className="flex items-center space-x-1 hover:text-yellow-400 transition-colors font-medium">
-                   <Link href="/about" className="hover:text-yellow-400 transition-colors font-medium">
+                 <div className="flex items-center space-x-1 hover:text-yellow-400 transition-colors font-normal">
+                   <Link href="/about" className="hover:text-yellow-400 transition-colors font-normal">
                      About
                    </Link>
                    <FaChevronDown className="text-sm" />
                  </div>
                  {/* Dropdown Menu */}
                  <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                   <div className="py-2">
-                     <Link href="/our-view" className="block px-4 py-2 text-blue-950 hover:bg-yellow-400 hover:text-white transition-colors">
+                   <div className="py-">
+                     <Link href="/our-view" className="block px-4 py-2 bg-blue-950 hover:text-yellow-400 transition-colors text-sm">
                        Our View
                      </Link>
-                     <Link href="/our-process" className="block px-4 py-2 text-blue-950 hover:bg-yellow-400 hover:text-white transition-colors">
+                     <Link href="/our-process" className="block px-4 py-2 bg-blue-950 hover:text-yellow-400 transition-colors text-sm">
                        Our Process
                      </Link>
                    </div>
                  </div>
                </div>
               
-              <Link href="/faqs" className="hover:text-yellow-400 transition-colors font-medium">FAQ&apos;s</Link>
-              <Link href="/blog" className="hover:text-yellow-400 transition-colors font-medium">Blog</Link>
-              <Link href="/contact" className="hover:text-yellow-400 transition-colors font-medium">Contact Us</Link>
-              <Link href="/login" className="hover:text-yellow-400 transition-colors font-medium">Log In</Link>
+              <Link href="/faqs" className="hover:text-yellow-400 transition-colors font-normal">FAQ&apos;s</Link>
+              <Link href="/blog" className="hover:text-yellow-400 transition-colors font-normal">Blog</Link>
+              <Link href="/contact" className="hover:text-yellow-400 transition-colors font-normal">Contact Us</Link>
+              <Link href="/login" className="hover:text-yellow-400 transition-colors font-normal">Log In</Link>
             </div>
           </div>
         </div>

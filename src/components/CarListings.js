@@ -50,14 +50,14 @@ const CarCards = () => {
       <div className="w-full px-2 pt-6  py-4 flex flex-col md:flex-row items-center justify-between bg-yellow-400 lg:bg-white">
         {/* Left Side - Heading (hidden on small screens) */}
         <div className="hidden md:block">
-          <h2 className="text-blue-900 text-4xl font-sm ">REFRESH YOUR DRIVE</h2>
-          <h1 className="text-4xl font-bold text-blue-900">
+          <h2 className="text-blue-950 text-4xl font-light pb-2  ">REFRESH YOUR DRIVE</h2>
+          <h1 className="text-4xl font-bold text-blue-950">
             FIND YOUR PERFECT CAR TODAY
           </h1>
         </div>
 
         {/* Right Side - Sort & Icons */}
-        <div className="flex items-center gap-3 mt-3 md:mt-0 gap-6">
+        <div className="flex items-center gap-3 mt-3 md:mt-0 gap-5">
           <span className=" md:inline font-semibold text-blue-950 ">
             Sort by:
           </span>
@@ -108,7 +108,7 @@ const CarCards = () => {
                 src={car.image}
                 alt={`${car.brand} ${car.model} ${car.year}`}
                 fill
-                className="object-cover"
+                className="object-cover "
               />
             </div>
 
@@ -181,7 +181,6 @@ const CarCards = () => {
         ))}
       </div>
 
-      {/* Pagination Controls */}
       {/* Pagination Controls */}
 <div className="flex justify-center items-center gap-2 py-6">
   {/* Prev Button */}
