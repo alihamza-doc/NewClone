@@ -209,7 +209,22 @@ export default function AboutPage() {
         <h1 className="text-2xl font-bold py-4 text-blue-950">CORE VALUES</h1>
         <div className="flex">
           <img src="/abouticon1.webp" alt="" className="w-18 h-18" />
-          <p className="p-5">The company emphasizes trust, quality, and customer satisfaction, making it a cornerstone of the Japanese export industry.</p>
+          <p className="p-4">The company emphasizes trust, quality, and customer satisfaction, making it a cornerstone of the Japanese export industry.</p>
+
+        </div>
+
+        <h1 className="text-2xl font-bold py-4 text-blue-950">OUR MISSION</h1>
+        <div className="flex">
+          <img src="/abouticon2.webp" alt="" className="w-18 h-18" />
+          <p className="p-4">The mission of Nazar Japan Motors is: 
+            "To offer affordable, efficient, and economical vehicles at competitive prices while delivering an exceptional customer experience that surpasses expectations. We are committed to serving our customers in friendly, professional, and efficient manner, creating genuine value at every step. Meeting expectations is our business; exceeding them is our purpose."</p>
+
+        </div>
+
+        <h1 className="text-2xl font-bold py-4 text-blue-950">VISION STATEMENT</h1>
+        <div className="flex">
+          <img src="/abouticon3.webp" alt="" className="w-18 h-18" />
+          <p className="p-4">The vision Statement of Nazar Japan Motors is:"To ensure every customer is happy and fully satisfied, driving our commitment to excellence. At Nazar Japan Motors, We strive to establish ourselves as the market leader in the Japanese used car industry through exceptional service and unwavering dedication to quality."</p>
 
         </div>
 
