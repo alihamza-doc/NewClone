@@ -24,15 +24,15 @@ const ShopByType = () => {
   CHOOSE BY<span className="text-white px-2">MAKE/MODEL</span>
 </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {vehicleBrands.map((type) => (
             <Link
               key={type.name}
               href={type.href}
-              className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center text-center  transition-colors duration-200"
+              className="bg-white rounded-lg shadow-md p-4 px-6 flex flex-col items-center justify-center text-center  transition-colors duration-200"
             >
               {/* Responsive image container */}
-              <div className="w-20 h-16 sm:w-24 sm:h-20 md:w-55 md:h-30 mb-2 mt-2 relative">
+              <div className="w-20 h-16 sm:w-24 sm:h-20 md:w-38 md:h-30 mb-2 mt-2 relative">
                 <Image
                   src={type.image}
                   alt={type.name}

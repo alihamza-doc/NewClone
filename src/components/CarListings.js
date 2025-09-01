@@ -172,10 +172,14 @@ const CarCards = () => {
               </div>
             </div>
 
-            <div className="p-4">
-              <button className="w-full py-2 text-sm sm:text-base bg-blue-950 text-white font-semibold rounded-full hover:bg-blue-900 transition-colors">
+            <div className="flex p-1 gap-1">
+              <button className="w-full py-2 text-xs sm:text-base bg-blue-950 text-white font-light rounded-full hover:bg-blue-900 transition-colors">
                 View Details
               </button>
+              <button className="w-full py-2 text-xs sm:text-base bg-blue-950 text-white font-light rounded-full hover:bg-blue-900 transition-colors">
+                Quick Review
+              </button>
+
             </div>
           </div>
         ))}
