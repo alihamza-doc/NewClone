@@ -94,7 +94,7 @@ const CarCards = () => {
       </div>
 
       {/* cards display for cars */}
-      <div className="grid grid-cols-1 p-4 bg-yellow-400 lg:bg-white w-full sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:mt-5">
+      <div className="grid grid-cols-1 p-4 bg-yellow-400 lg:bg-white w-full sm:grid-cols-2 lg:grid-cols-4 lg:gap-1 gap-6 lg:mt-5">
         {currentCars.map((car) => (
           <div
             key={car.id}

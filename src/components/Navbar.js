@@ -72,12 +72,12 @@ export default function Navbar() {
                    <FaChevronDown className="text-sm" />
                  </div>
                  {/* Dropdown Menu */}
-                 <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                 <div className="absolute top-full left-0 mt-2  w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                    <div className="py-">
-                     <Link href="/our-view" className="block px-4 py-2 bg-blue-950 hover:text-yellow-400 transition-colors text-sm">
+                     <Link href="/about" className="block px-4 py-3 bg-blue-950 hover:text-yellow-400 transition-colors text-sm">
                        Our View
                      </Link>
-                     <Link href="/our-process" className="block px-4 py-2 bg-blue-950 hover:text-yellow-400 transition-colors text-sm">
+                     <Link href="/our-process" className="block px-4 py-3 bg-blue-950 hover:text-yellow-400 transition-colors text-sm">
                        Our Process
                      </Link>
                    </div>
@@ -105,7 +105,7 @@ export default function Navbar() {
           <Link href="/our-process" className="hover:text-yellow-400 transition-colors py-2 pl-4" onClick={() => setIsOpen(false)}>Our Process</Link>
           <Link href="/faqs" className="hover:text-yellow-400 transition-colors py-2" onClick={() => setIsOpen(false)}>FAQ&apos;s</Link>
           <Link href="/blog" className="hover:text-yellow-400 transition-colors py-2" onClick={() => setIsOpen(false)}>Blog</Link>
-          <Link href="/review" className="hover:text-yellow-400 transition-colors py-2" onClick={() => setIsOpen(false)}>Reviews</Link>
+          <Link href="/contact" className="hover:text-yellow-400 transition-colors py-2" onClick={() => setIsOpen(false)}>Contant Us</Link>
           <Link href="/login" className="hover:text-yellow-400 transition-colors py-2" onClick={() => setIsOpen(false)}>Log In</Link>
         </div>
       </div>

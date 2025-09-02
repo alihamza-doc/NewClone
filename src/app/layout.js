@@ -1,13 +1,11 @@
 import "./../styles/globals.css";
 import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import TopBanner from "../components/TopBanner";
 import { Providers } from "./provider.js";
-import { Inter } from "next/font/google"; 
-import Filter from "../components/CarFilter"
+import { Inter } from "next/font/google";
+import ClientLayout from "./ClientLayout"; // ✅ wrapper for Sidebar/Filter
 
-// ✅ Load Inter font (weight 500, you can add more weights if needed)
 const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -25,11 +23,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <TopBanner />
           <Navbar />
-          <div className="flex">
-            <Sidebar />
-            <main className="flex-1">{children}</main>
-            <Filter />
-          </div>
+          <ClientLayout>{children}</ClientLayout>
           <Footer />
         </Providers>
       </body>
