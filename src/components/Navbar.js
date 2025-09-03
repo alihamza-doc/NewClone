@@ -101,7 +101,7 @@ export default function Navbar() {
           
           <Link href="/" className="hover:text-yellow-400 transition-colors py-2" onClick={() => setIsOpen(false)}>Home</Link>
           <Link href="/about" className="hover:text-yellow-400 transition-colors py-2" onClick={() => setIsOpen(false)}>About Us</Link>
-          <Link href="/our-view" className="hover:text-yellow-400 transition-colors py-2 pl-4" onClick={() => setIsOpen(false)}>Our View</Link>
+          <Link href="/about" className="hover:text-yellow-400 transition-colors py-2 pl-4" onClick={() => setIsOpen(false)}>Our View</Link>
           <Link href="/our-process" className="hover:text-yellow-400 transition-colors py-2 pl-4" onClick={() => setIsOpen(false)}>Our Process</Link>
           <Link href="/faqs" className="hover:text-yellow-400 transition-colors py-2" onClick={() => setIsOpen(false)}>FAQ&apos;s</Link>
           <Link href="/blog" className="hover:text-yellow-400 transition-colors py-2" onClick={() => setIsOpen(false)}>Blog</Link>
