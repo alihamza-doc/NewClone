@@ -94,14 +94,14 @@ const CarCards = () => {
       </div>
 
       {/* cards display for cars */}
-      <div className="grid grid-cols-1 p-4 bg-yellow-400 lg:bg-white w-full sm:grid-cols-2 lg:grid-cols-4 lg:gap-1 gap-6 lg:mt-5">
+      <div className="grid grid-cols-1 p-2 lg:p-0 bg-yellow-400 lg:bg-white w-full sm:grid-cols-2 lg:grid-cols-4 lg:gap-1 gap-6 lg:mt-5">
         {currentCars.map((car) => (
           <div
             key={car.id}
-            className="flex flex-col w-full border border-gray-200 rounded-xl overflow-hidden bg-white shadow-md transition hover:shadow-lg"
+            className="flex flex-col w-full  border border-gray-200 rounded-xl overflow-hidden bg-white shadow-md transition hover:shadow-lg"
           >
             {/* Car Image */}
-            <div className="relative w-full h-[200px] sm:h-[220px] md:h-[240px]">
+            <div className="relative w-full h-[250px] sm:h-[220px] md:h-[160px] ">
               <Image
                 src={car.image}
                 alt={`${car.brand} ${car.model} ${car.year}`}
@@ -112,14 +112,14 @@ const CarCards = () => {
 
             {/* Car Details */}
             <div className="p-4 flex flex-col flex-grow">
-              <h3 className="text-base md:text-lg font-semibold text-gray-800">
+              <h3 className="text-base md:text-base font-semibold text-gray-800">
                 {car.brand.toUpperCase()} / {car.model.toUpperCase()}
               </h3>
               <p className="text-blue-900 font-bold text-xs sm:text-sm">
                 Model {car.year}
               </p>
 
-              <div className="mt-3 space-y-2 text-xs sm:text-sm">
+              <div className="mt-3 space-y-2 text-xs sm:text-xs">
                 <div className="flex items-center gap-2 text-gray-700">
                   <FontAwesomeIcon
                     icon={faCogs}
@@ -145,7 +145,7 @@ const CarCards = () => {
 
               <hr className="my-3 border-t border-yellow-400" />
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-2 text-xs sm:text-sm text-gray-700">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-2 text-xs sm:text-xs text-gray-700">
                 <div className="flex items-center gap-1 sm:gap-2">
                   <FontAwesomeIcon
                     icon={faCogs}
