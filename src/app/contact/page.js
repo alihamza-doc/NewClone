@@ -5,7 +5,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactCard() {
   return (
-   <div className="bg-blue-950 p-20 items-center justify-center">
+   <div className="bg-blue-950 p-2 lg:p-20 items-center justify-center">
 
     <div className="px-2 text-white mb-10 text-xl lg:text-5xl font-bold">
       <h1>NAZAR GROUP OFFICE(S) IN <span className="text-yellow-500">PAKISTAN</span></h1>

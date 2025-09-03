@@ -87,7 +87,7 @@ export default function Navbar() {
               <Link href="/faqs" className="hover:text-yellow-400 transition-colors font-normal">FAQ&apos;s</Link>
               <Link href="/blog" className="hover:text-yellow-400 transition-colors font-normal">Blog</Link>
               <Link href="/contact" className="hover:text-yellow-400 transition-colors font-normal">Contact Us</Link>
-              <Link href="/login" className="hover:text-yellow-400 transition-colors font-normal">Log In</Link>
+              <Link href="/sign-in" className="hover:text-yellow-400 transition-colors font-normal">Log In</Link>
             </div>
           </div>
         </div>
