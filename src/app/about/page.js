@@ -10,7 +10,7 @@ export default function AboutPage() {
     <div className={montserrat.className}>
       <section className="relative min-h-screen">
         {/* Background image (full screen without cutting) */}
-        <div className="absolute inset-0 bg-[url('/AboutUs1.png')] bg-contain bg-no-repeat bg-center"></div>
+        <div className="absolute inset-0 bg-[url('/AboutUs1.png')] bg-cover bg-no-repeat bg-center"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950   to-transparent"></div>
 
         {/* Content */}
