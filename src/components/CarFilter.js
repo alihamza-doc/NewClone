@@ -25,10 +25,10 @@ export default function CarFilter({ showOnMobile = false }) {
      
      <div className="bg-blue-950 text-white text-center w-full py-4 px-4  mb-6">
       {/* Filters */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4">
         {/* Makers */}
         <select
-          className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
+          className="p-3 text-sm bg-white/90 rounded-xl border border-gray-300 text-gray-800 
           shadow-md focus:ring-4 focus:ring-yellow-400 focus:outline-none hover:shadow-lg transition"
           value={filters.maker}
           onChange={(e) => handleChange("maker", e.target.value)}
@@ -43,7 +43,7 @@ export default function CarFilter({ showOnMobile = false }) {
 
         {/* Body Type */}
         <select
-          className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
+          className="p-3 text-sm bg-white/90 rounded-xl border border-gray-300 text-gray-800 
           shadow-md focus:ring-4 focus:ring-yellow-400 focus:outline-none hover:shadow-lg transition"
           value={filters.bodyType}
           onChange={(e) => handleChange("bodyType", e.target.value)}
@@ -58,7 +58,7 @@ export default function CarFilter({ showOnMobile = false }) {
 
         {/* Transmission */}
         <select
-          className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
+          className="p-3 text-sm bg-white/90 rounded-xl border border-gray-300 text-gray-800 
           shadow-md focus:ring-4 focus:ring-yellow-400 focus:outline-none hover:shadow-lg transition"
           value={filters.transmission}
           onChange={(e) => handleChange("transmission", e.target.value)}
@@ -73,7 +73,7 @@ export default function CarFilter({ showOnMobile = false }) {
 
         {/* Branches */}
         <select
-          className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
+          className="p-3 text-sm bg-white/90 rounded-xl border border-gray-300 text-gray-800 
           shadow-md focus:ring-4 focus:ring-yellow-400 focus:outline-none hover:shadow-lg transition"
           value={filters.branch}
           onChange={(e) => handleChange("branch", e.target.value)}
@@ -88,7 +88,7 @@ export default function CarFilter({ showOnMobile = false }) {
 
         {/* Fuel Type */}
         <select
-          className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
+          className="p-3 text-sm bg-white/90 rounded-xl border border-gray-300 text-gray-800 
           shadow-md focus:ring-4 focus:ring-yellow-400 focus:outline-none hover:shadow-lg transition"
           value={filters.fuelType}
           onChange={(e) => handleChange("fuelType", e.target.value)}
@@ -103,7 +103,7 @@ export default function CarFilter({ showOnMobile = false }) {
 
         {/* Steering */}
         <select
-          className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
+          className="p-3 text-sm bg-white/90 rounded-xl border border-gray-300 text-gray-800 
           shadow-md focus:ring-4 focus:ring-yellow-400 focus:outline-none hover:shadow-lg transition"
           value={filters.steering}
           onChange={(e) => handleChange("steering", e.target.value)}
@@ -118,7 +118,7 @@ export default function CarFilter({ showOnMobile = false }) {
 
         {/* Exterior Color */}
         <select
-          className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
+          className="p-3 text-sm bg-white/90 rounded-xl border border-gray-300 text-gray-800 
           shadow-md focus:ring-4 focus:ring-yellow-400 focus:outline-none hover:shadow-lg transition"
           value={filters.extColor}
           onChange={(e) => handleChange("extColor", e.target.value)}
@@ -133,7 +133,7 @@ export default function CarFilter({ showOnMobile = false }) {
 
         {/* Interior Color */}
         <select
-          className="p-4 bg-white/90 rounded-xl border border-gray-300 text-gray-800 
+          className="p-3 text-sm bg-white/90 rounded-xl border border-gray-300 text-gray-800 
           shadow-md focus:ring-4 focus:ring-yellow-400 focus:outline-none hover:shadow-lg transition"
           value={filters.intColor}
           onChange={(e) => handleChange("intColor", e.target.value)}

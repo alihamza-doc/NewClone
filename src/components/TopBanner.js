@@ -18,7 +18,7 @@ export default function TopBanner() {
       {/* Left Side - Contact Info */}
       <div className="flex items-center gap-6">
         <span className="flex items-center gap-1  text-sm">
-          <FaPhone /> +92 300 1234567
+          <FaPhone className="-rotate-270" /> +92 300 1234567
         </span>
         <span className="flex items-center gap-1 px-7 text-sm">
           <FaEnvelope /> info@example.com

@@ -15,7 +15,7 @@ export default function Home() {
       <CarListings />
 
       <ShopByType />
-
+ 
       <CarBrands />
 
       {/* banner of quality */}
@@ -134,7 +134,7 @@ export default function Home() {
           {/* Card 2 */}
           <div className="bg-blue-950 p-2 rounded-sm text-white flex items-center">
             <div className="w-[20%] flex justify-center">
-              <img src="/honda.png" alt="fuel" className="w-18 h-15" />
+              <img src="/honda.png" alt="fuel" className="w-18 h-13" />
             </div>
             <div className="w-[80%] pl-3">
               <p className="font-semibold text-2xl">Honda Cars</p>
