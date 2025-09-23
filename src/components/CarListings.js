@@ -13,11 +13,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FaThLarge, FaList } from "react-icons/fa";
 import { fetchCars } from "../redux/slices/carListingsSlice"; // ✅ import thunk
-
+import carData from "../../db.json"; // Sample data for testing
 const CarCards = () => {
   const dispatch = useDispatch();
-  const { cars, loading, error } = useSelector((state) => state.carListings);
-
+  const { loading, error } = useSelector((state) => state.carListings);
+ const [cars, setCars] = useState([]);
   const [sortOrder, setSortOrder] = useState("ASC");
   const [Branch, setBranch] = useState("Branch");
   const [view, setView] = useState("grid");
@@ -28,8 +28,8 @@ const CarCards = () => {
 
   // ✅ Fetch cars from API when component mounts
   useEffect(() => {
-    dispatch(fetchCars());
-  }, [dispatch]);
+     setCars(carData.cars);
+  }, []);
 
   // ✅ Sort cars (frontend sorting)
   const sortedCars = [...cars].sort((a, b) =>
